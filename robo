@@ -25,8 +25,8 @@ chmod -R 755 $ROBO_CONF $ROBO_BOTS
 # Run robocode in a container, with user permissions
 docker run -it \
 	-u $(id -u):$(id -g) \
-	-v /tmp/.X11-unix:/tmp/.X11-unix:rw \
-	-v $ROBO_BOTS:/robocode/robots/robots:rw \
+	-v /tmp/.X11-unix:/tmp/.X11-unix \
+	-v $ROBO_BOTS:/robocode/robots/custom \
 	-v $ROBO_HOME:/robocode/config \
 	-e ROBO_HOME \
 	-e ROBO_BOTS \
