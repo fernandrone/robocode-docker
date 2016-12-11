@@ -16,7 +16,7 @@ Robocode in an extra-slim container!
   $ mkdir -p $ROBO_BOTS $ROBO_CONF
   ```
 
-2. Next, run the container passing the chosen volumes, mapped as below:
+2. Next, run the container passing the chosen volumes:
 
   ```
   $ docker run -it --rm \
