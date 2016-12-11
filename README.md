@@ -3,7 +3,7 @@ Robocode in an extra-slim container!
 
 ## Runnning
 
-1. To persist data accross multiple sessions, create folders where Robocode can store robot data and configuration files. A good place to pick is `$HOME/.robocode` (but you can choose somewhere else). I suggest setting two environment variables:
+1. To persist data accross multiple sessions, create folders where Robocode can store robot data and configuration files. A good place to pick is `$HOME/.robocode` (but you can choose somewhere else). First, set the variables below:
 
   ```
   $ export $ROBO_BOTS=~/.robocode/robots 
